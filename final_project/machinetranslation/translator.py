@@ -20,12 +20,12 @@ def englishToFrench(englishText):
     frenchText = language_translator.translate(
     text=englishText,
     model_id='en-fr').get_result()
-    print(json.dumps(frenchText, indent=2, ensure_ascii=False))
+    #print(json.dumps(frenchText, indent=2, ensure_ascii=False))
     return frenchText
-    
+
 def frenchToEnglish(frenchText):
     englishText = language_translator.translate(
     text=frenchText,
     model_id='en-fr').get_result()
-    print(json.dumps(englishText, indent=2, ensure_ascii=False))
+    #print(json.dumps(englishText, indent=2, ensure_ascii=False))
     return englishText 
